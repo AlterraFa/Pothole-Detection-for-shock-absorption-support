@@ -2,27 +2,7 @@
 from ultralytics import YOLO
 import argparse
 import sys
-import ast
-import yaml
-from roboflow import Roboflow
-
-# Download dataset (ensure internet connection)
-rf = Roboflow(api_key="FlvbWyNmK8k1jbIW6Gxc")
-project = rf.workspace("potholedetection-kbmir").project("pothole-segmentation-remaster")
-version = project.version(9)
-dataset = version.download("yolov8", location = '../Resources/PotholeDataset')
-
-# Change directory if needed
-with open('../Resources/PotholeDataset/data.yaml', 'r') as file:
-    data = yaml.safe_load(file)
-    
-data['test'] = '../test/images'
-data['train'] = '../train/images'
-data['val'] = '../valid/images'
-
-with open('../Resources/PotholeDataset/data.yaml', 'w') as file:
-    yaml.safe_dump(data, file)
- 
+import ast 
 
 def parse_list(arg):
     try:

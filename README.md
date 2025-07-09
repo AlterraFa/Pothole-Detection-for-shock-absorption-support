@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/AlterraFa/Pothole-Detection-for-shock-absorption-support">
-    <img src="Icon/IMAGE_Pothole_Int_small.png" alt="Logo" width="80" height="100">
+    <img src="Icon/IMAGE_Pothole_Int_small.ico" alt="Logo" width="100" height="100">
   </a>
 
 <h3 align="center">Pothole Detection for shock absorption support</h3>
